@@ -158,25 +158,15 @@ and manual dispatch. Real secrets belong in GitHub Actions secrets, not fixture 
 
 ## AI usage disclosure
 
-AI tools were used substantially during development. The candidate provided the starter
-framework/assignment materials and project requirements; ChatGPT then helped turn that
-starting point into the Playwright + TypeScript + Cucumber BDD project, including its
-configuration, browser setup, page-object and step-definition structure, scenario flows,
-test data, reporting, and GitHub Actions workflow. AI assistance also produced and revised
-project documentation, including the README and database validation notes. ChatGPT 
+## AI Usage Disclosure
 
-AI-assisted revisions included refining assertion setup and cart product matching, and,
-in a later GitHub Copilot session, adding `SLOW_MO_MS` to slow headed Playwright runs
-(500 ms by default) and documenting the command. Copilot ran `npm run typecheck`
-successfully. It also explained the TypeScript Node16 module settings, but did not edit
-`tsconfig.json`. Test status and other validation claims are recorded separately in
-`docs/VALIDATION.md`; this disclosure does not imply that AI ran every project check.
+I used ChatGPT to generate the initial Playwright + TypeScript + Cucumber framework based on the assignment requirements. This included page objects, step definitions, hooks, configuration, test data, reporting, the GitHub Actions workflow, and supporting documentation.
 
-I reviewed the generated framework, including the step definitions, page objects, hooks,
-locator strategy and database utility. I made no code changes.
+GitHub Copilot later assisted with adding the configurable `SLOW_MO_MS` option for slower headed execution and updating the documentation.
 
-I also ran the tests in headed Chrome with `SLOW_MO_MS=1000` to slow down the execution
-and observe the browser.
+I reviewed the generated framework, including the step definitions, page objects, hooks, locator strategy and database utility. I also ran the tests locally in headed mode with `SLOW_MO_MS=1000` to observe execution. I did not manually change the generated code.
+
+Execution results and verification details are recorded in `docs/VALIDATION.md`.
 
 
 ## Submission
@@ -186,7 +176,7 @@ node_modules, real .env files or private data. Record your own 5–8-minute walk
 and include its accessible link below (or a video file).
 Review the code so you can change a locator and add an assertion live.
 
-Walkthrough video: 
+Walkthrough video: https://drive.google.com/file/d/1ivfA4-9NlqSFdoPCJ7D2sOFXfftB1osS/view?usp=share_link
 
 ## References
 
